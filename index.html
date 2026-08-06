@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tokokita - belanja online mudah dan terpercaya" />
+    <title>Tokokita - Belanja Online Mudah</title>
+    <!-- Memuat Tailwind CSS langsung dari CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- NAVBAR -->
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo Toko -->
+            <h1 class="text-xl font-bold text-blue-700">Tokokita</h1>
+            
+            <!-- Menu Navigasi -->
+            <nav class="hidden md:flex gap-6 text-gray-600">
+                <a href="#hero" class="hover:text-blue-700">Beranda</a>
+                <a href="#catalog" class="hover:text-blue-700">Katalog</a>
+                <a href="#about" class="hover:text-blue-700">Tentang Kami</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <!-- Tombol Keranjang -->
+                <button class="bg-blue-700 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-800 transition">
+                    Keranjang (0)
+                </button>
+                <div id="menu-mobile" class="hidden absolute left-0 top-full mt-2 w-full bg-white shadow-ig rounded b-x1 p-4 md=hidden z-20">
+                    <ul class="flex flex-col gap-2">
+             <li><a href="#hero" class="hover:text-blue-700">Beranda</a><li>
+                <li><a href="#catalog" class="hover:text-blue-700">Katalog</a><li>
+               <li> <a href="#about" class="hover:text-blue-700">Tentang Kami</a><li>
+               </ul>
+               <div>
+
+                <!-- Ikon Hamburger (Mobile) -->
+                <button class="md:hidden text-gray-700 text-2xl">&#9776;</button>
+            </div>
+       </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="bg-gradient-to-r from-blue-700 to-blue-500 text-white">
+            <div class="max-w-7xl mx-auto px-4 py-16 text-center">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                    Belanja Mudah, Harga Bersahabat
+                </h2>
+                <p class="text-blue-100 mb-6">
+                    Temukan berbagai produk pilihan hanya di Tokokita
+                </p>
+                <a href="#catalog"
+                    class="inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition">
+                    Lihat Katalog
+                </a>
+            </div>
+            
+        </section>
+
+        <!-- CATALOG SECTION -->
+        <section id="catalog" class="max-w-7xl mx-auto px-4 py-12">
+            <h3 class="text-2xl font-bold text-gray-800 mb-8">Produk Pilihan</h3>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Kartu Produk 1 (Dengan Diskon) -->
+                <div class="relative bg-white rounded-xl shadow hover:shadow-lg transition p-4">
+                    <span class="absolute top-2 left-2 bg-yellow-400 text-xs font-bold px-2 py-1 rounded">
+                        DISKON 20%
+                    </span>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJmkfuCTJh0o2fkSKKuhK4nXpPCWqRlO5AbFBg2_mSeA&s=10"
+                        alt="Printer Canon G2010" class="w-full h-40 object-cover rounded-lg mb-3" />
+                    <h4 class="font-semibold text-gray-800">Printer Canon G2010</h4>
+                    <p class="text-blue-700 font-bold mt-1">Rp 2.789.000</p>
+                    <button class="w-full mt-3 bg-blue-700 text-white py-2 rounded-lg text-sm hover:bg-blue-800 transition">
+                        Tambah ke Keranjang
+                    </button>
+                </div>
+
+                <!-- Kartu Produk 2 (Standar) -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4">
+                    <img src="https://i.pinimg.com/1200x/10/4b/7a/104b7af072d13d4696873de057f157a2.jpg"
+                        alt="Kendaraan jaksel" class="w-full h-40 object-cover rounded-lg mb-3" />
+                    <h4 class="font-semibold text-gray-800">Kendaraan jaksel</h4>
+                    <p class="text-blue-700 font-bold mt-1">Rp 750.000.000</p>
+                    <button class="w-full mt-3 bg-blue-700 text-white py-2 rounded-lg text-sm hover:bg-blue-800 transition">
+                        Tambah ke Keranjang
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4">
+                    <img src="https://cdn.mos.cms.futurecdn.net/6vA8wWskCkUgffN9dbQhvh-1024-80.jpg.webp"
+                        alt="Kertas HVS A4" class="w-full h-40 object-cover rounded-lg mb-3" />
+                    <h4 class="font-semibold text-gray-800">Burung Kalimantan</h4>
+                    <p class="text-blue-700 font-bold mt-1">Rp 450.000.000</p>
+                    <button class="w-full mt-3 bg-blue-700 text-white py-2 rounded-lg text-sm hover:bg-blue-800 transition">
+                        Tambah ke Keranjang
+                    </button>
+            </div>
+           
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition p-4">
+                    <img src="https://i.pinimg.com/736x/b6/cc/35/b6cc35aebf7bfefe2b6529a644ec704d.jpg"
+                        alt="Kertas HVS A4" class="w-full h-40 object-cover rounded-lg mb-3" />
+                    <h4 class="font-semibold text-gray-800">buah bibir</h4>
+                    <p class="text-blue-700 font-bold mt-1">Rp 500.000</p>
+                    <button class="w-full mt-3 bg-blue-700 text-white py-2 rounded-lg text-sm hover:bg-blue-800 transition">
+                        Tambah ke Keranjang
+                    </button>
+                </div>
+                
+            </div>
+            <form id="form-produk" class="bg-white rounded-x1 shadow p-6 mt-8 max-w-md mx-auto">
+                <h4 class="font-semibold text-gray-800 mb-4">Tambah produk Baru</h4>
+
+                <label class="block text-sm text-gray-600 mb-1">Nama Produk</label>
+                <input type="text" id="input-nama" required
+                class="w-full-border rounded-ig px-3 py-2 mb-3" />
+
+                <label class="block text-sm text-gray-600 mb-1">Harga (rp)</label>
+                <input type="text" id="input-harga" requireda min="0"
+                class="w-full-border rounded-ig px-3 py-2 mb-3" />
+
+                <p id="pesan-error" class ="text-red-600 text-sm mb-3 hidden"></p>
+
+                <button type="submit"
+                class="w-full bg-blue-700 text-white py-2 rounded-lg hover:bg-red-800">
+                Tambahkan Produk
+                </button>
+            </form>
+        </section>
+
+        <!-- ABOUT / TESTIMONIAL SECTION -->
+        <section id="about" class="bg-white py-12">
+            <div class="max-w-7xl mx-auto px-4">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">
+                    Apa Kata Pelanggan Kami?
+                </h3>
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex-1 bg-gray-50 rounded-xl p-6">
+                        <p class="text-gray-600 italic">
+                            "Pelayanan cepat dan produk original! Sangat puas belanja di sini."
+                        </p>
+                        <p class="mt-4 font-semibold text-gray-800">- Dita, Sentinel</p>
+                    </div>
+                    <div class="flex-1 bg-gray-50 rounded-xl p-6">
+                        <p class="text-gray-600 italic">
+                            "Pengiriman aman, kemasan rapi. Recommended seller!"
+                        </p>
+                        <p class="mt-4 font-semibold text-gray-800">- Rafi, Jakarta</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 py-10">
+  <!-- grid-cols-1 di mobile, grid-cols-3 di tablet ke atas -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+    <div>
+      <h5 class="text-white font-semibold mb-3">TokoKita</h5>
+      <p>Belanja online mudah, cepat, dan terpercaya sejak 2026.</p>
+    </div>
+    <div>
+      <h5 class="text-white font-semibold mb-3">Tautan Cepat</h5>
+      <ul class="space-y-2">
+        <li><a href="#catalog" class="hover:text-white">Katalog</a></li>
+        <li><a href="#about" class="hover:text-white">Tentang Kami</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5 class="text-white font-semibold mb-3">Hubungi Kami</h5>
+      <p>Email: halo@tokokita.id</p>
+      <p>WhatsApp: 0812-xxxx-xxxx</p>
+    </div>
+  </div>
+  <hr class="border-gray-700 my-6" />
+  <p class="text-center text-xs">
+    &copy; 2026 TokoKita. Dibuat dalam Bootcamp Fullstack Web Development.
+  </p>
+</div>
+<script src="sript.js"defer></script>
+</body>
+</html>
